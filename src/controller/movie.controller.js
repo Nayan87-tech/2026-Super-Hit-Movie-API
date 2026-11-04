@@ -29,6 +29,7 @@ export const movies = async (req, res) => {
       WorldWideCollection,
       image: uploadFile.url,
     });
+
     // console.log("DB_USER", newUser);
 
     const data = await newUser.save();
@@ -46,7 +47,6 @@ export const movies = async (req, res) => {
       .json({ message: "Movies Details Added Succesfully!",token });
   } catch (error) {
     console.error("Movie Upload Error:", error);
-
     return res.status(500).json({
       message: "Internal Server Error",error
     });

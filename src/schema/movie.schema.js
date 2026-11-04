@@ -13,5 +13,6 @@ const HitMovie = new Schema (
     }
 )
 
+
 const movie = mongoose.model("MovieData",HitMovie);
 export default movie;
