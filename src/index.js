@@ -9,7 +9,7 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 3030;
 app.use(cors({
-    origin: ["http://localhost:5173","https://moviesfrontend-i3lt9f378-nayan21.vercel.app/"],
+    origin: ["http://localhost:5173","https://moviesfrontend-i3lt9f378-nayan21.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 app.use(express.json());
